@@ -1,0 +1,190 @@
+.header {
+  position: relative;
+  z-index: 999;
+  padding: 0 3.5rem;
+}
+
+/* ------- NAV ------- */
+.menu {
+  border-bottom: 1px solid var(--menu-color);
+  padding: 1.3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* desktop list (din gamle ul) */
+.menu__list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 500px;
+  width: 100%;
+}
+
+.menu a {
+  display: inline-block;
+  color: var(--menu-color);
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+
+  transform-origin: right center;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.menu a:hover {
+  color: var(--menu-hover);
+  transform: translateY(-4px) scale(1.08);
+}
+
+/* ------- BURGER (hidden on desktop) ------- */
+.burger {
+  display: none;
+  position: absolute;
+  right: 0;
+
+  background: transparent;
+  border: 0;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.burger__line {
+  display: block;
+  width: 28px;
+  height: 2px;
+  background: var(--menu-color);
+  margin: 6px 0;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+/* ------- MOBILE PANEL ------- */
+.mobile {
+  display: none;
+}
+
+/* ------- RESPONSIVE ------- */
+@media (max-width: 840px) {
+  .header {
+    padding: 0 2rem;
+  }
+
+  .menu {
+    border: none;
+  }
+
+  /* hide desktop links */
+  .menu__list {
+    display: none;
+  }
+
+  /* show burger */
+  .burger {
+    display: inline-block;
+  }
+
+  .mobile {
+    display: block;
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 50;
+  }
+
+  .mobile.is-open {
+    pointer-events: auto;
+  }
+
+  .mobile__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  .mobile.is-open .mobile__overlay {
+    opacity: 1;
+  }
+
+  .mobile__panel {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: min(80vw, 150px);
+    background: var(--bg-color);
+    border-left: 1px solid var(--menu-color);
+    padding: 4rem 1.5rem;
+
+    transform: translateX(100%);
+    transition: transform 0.25s ease;
+  }
+
+  .mobile.is-open .mobile__panel {
+    transform: translateX(0);
+  }
+
+  .mobile__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .mobile__list a {
+    color: var(--menu-color);
+    text-decoration: none;
+    font-family: var(--font-body);
+    font-size: 1.4rem;
+  }
+
+  .mobile__list a:hover {
+    color: var(--menu-hover);
+  }
+}
+
+/* ============================
+   BURGER → X ANIMATION
+============================ */
+
+.burger.is-open .burger__line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.burger.is-open .burger__line:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.is-open .burger__line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+.header {
+  position: relative;
+  z-index: 60;
+}
+
+.menu {
+  position: relative;
+  z-index: 60;
+}
+
+.burger {
+  position: absolute; /* du har allerede right:0 */
+  right: 0;
+  z-index: 70; /* 🔥 over overlay */
+}

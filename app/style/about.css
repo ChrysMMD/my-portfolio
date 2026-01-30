@@ -1,0 +1,61 @@
+.grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-auto-rows: minmax(min-content, auto);
+  container-name: grid;
+  container-type: inline-size;
+  column-gap: 2rem;
+  row-gap: 5rem;
+}
+
+.billede {
+  grid-column: 1/3;
+  grid-row: 1/6;
+  z-index: 2;
+}
+
+.billede img {
+  object-fit: contain;
+}
+
+.titel {
+  z-index: 1;
+  grid-column: 2/10;
+  grid-row: 1/4;
+  text-wrap: nowrap;
+  padding-left: 80px;
+}
+
+.tekst {
+  grid-row: 4/7;
+  grid-column: 3/5;
+}
+
+.tekst p {
+  margin-bottom: 1rem;
+  margin-top: 0;
+  padding: 0;
+}
+
+.fakta {
+  grid-row: 4/7;
+  grid-column: 5/11;
+}
+
+.fakta p {
+  font-size: clamp(2rem, 2vw, 6rem);
+  line-height: 2rem;
+  margin: 0.3rem;
+}
+
+.label {
+  font-weight: 400;
+}
+
+@container grid (min-width: 350px) {
+  .titel h1 {
+    display: block;
+    font-size: 20vw;
+  }
+}
