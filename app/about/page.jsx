@@ -41,27 +41,10 @@ export default function About() {
         </div>
         <div className="fakta">
           <p>
-            <span className="label">KALDENAVNE:</span>{" "}
-            <span className="value">CHRYS/CHRIS, CHRYLLE</span>
-          </p>
-
-          <p>
-            <span className="label">STYRKER:</span>{" "}
-            <span className="value">
-              OVERBLIK, STRUKTURERET, LÆREVILLIG, GÅPÅMOD, ANSVARLIG
-            </span>
-          </p>
-
-          <p>
-            <span className="label">SVAGHEDER:</span>{" "}
-            <span className="value">OSTEPOPS</span>
-          </p>
-
-          <p>
-            <span className="label">HOBBYER:</span>{" "}
-            <span className="value">
-              TRÆNING, TEGNING, GAMING, STORYTELLING
-            </span>
+            <strong>KALDENAVNE:</strong> CHRIS, CHRYS, CHRYLLE
+            <strong> STYRKER:</strong> OVERBLIK, STRUKTURERET, LÆREVILLIG,
+            GÅPÅMOD, ANSVARLIG<strong> SVAGHEDER:</strong> OSTEPOPS{" "}
+            <strong>HOBBYER:</strong> TRÆNING, TEGNING, GAMING, STORYTELLING
           </p>
         </div>
       </section>

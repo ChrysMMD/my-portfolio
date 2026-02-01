@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="grid">
+      <div className="about-grid">
         <div className="cv-header">
           <Image
             src="/img/cv.svg"
@@ -122,15 +122,15 @@ export default function Home() {
                   <li>Figma</li>
                   <li>Branding</li>
                   <li>SoMe</li>
-                  <li>Project management</li>
                   <li>Writing</li>
                   <li>UX / UI</li>
+                  <li>Project-lead</li>
                   <li>WordPress (Elementor)</li>
                 </ul>
               </div>
               <div>
                 <h2>Languages</h2>
-                <ul class="skills-list">
+                <ul className="language-list">
                   <li>Danish (main)</li>
                   <li>English</li>
                 </ul>

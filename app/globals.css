@@ -40,7 +40,7 @@ body {
 .page {
   flex: 1;
   padding: 2rem 3.5rem;
-  padding-bottom: 0;
+  padding-bottom: 2rem;
   height: 100%;
 }
 
@@ -73,6 +73,7 @@ h3 {
 p {
   font-weight: 300;
   font-size: 1.3rem;
+  color: var(--text-color);
 }
 
 li {
@@ -160,7 +161,7 @@ img {
   );
   --menu-color: var(--color-light-pink);
   --footer-color: var(--color-purple);
-  --text-color: var(--color-dark-purple);
+  --text-color: var(--color-purple);
   --h1-color: var(--color-pink);
   --h1-size: clamp(10rem, 18vw, 25rem);
 }
@@ -170,7 +171,7 @@ img {
   --bg: var(--color-pink);
   --menu-color: var(--color-purple);
   --footer-color: var(--color-purple);
-  --text-color: var(--color-dark-purple);
+  --text-color: var(--color-light-pink);
 }
 
 /* CASE */
