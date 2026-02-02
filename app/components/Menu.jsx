@@ -43,7 +43,7 @@ export default function Menu() {
             <Link href="/about">About me</Link>
           </li>
           <li>
-            <Link href="/portfolio">Projects</Link>
+            <Link href="/projects">Projects</Link>
           </li>
           <li>
             <Link href="/cv">CV</Link>

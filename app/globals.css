@@ -144,21 +144,16 @@ img {
 
 /* PROJECTS */
 .theme-projects {
-  --bg-color: var(--color-offwhite);
+  --bg: var(--color-offwhite);
   --menu-color: var(--color-purple);
   --footer-color: var(--color-purple);
   --text-color: var(--color-orange);
+  --h1-color: var(--color-pink);
 }
 
 /* ABOUT */
 .theme-about {
-  --bg: linear-gradient(
-    to bottom,
-    var(--color-orange) 0,
-    var(--color-orange) 26vw,
-    var(--color-offwhite) 26vw,
-    var(--color-offwhite) 100%
-  );
+  --bg: var(--color-orange);
   --menu-color: var(--color-light-pink);
   --footer-color: var(--color-purple);
   --text-color: var(--color-purple);

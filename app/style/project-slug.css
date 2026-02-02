@@ -1,0 +1,58 @@
+.projectPage {
+  min-height: 100vh;
+}
+
+/* HERO (øverste område) */
+.hero {
+  padding: 3rem 1.25rem 2rem;
+}
+
+.heroInner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* TITLE */
+.titleBlock {
+  padding: 1rem 1.25rem;
+}
+
+.titleInner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.bigTitle {
+  margin: 0;
+  font-size: clamp(3rem, 10vw, 6.5rem);
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  margin: 0.5rem 0 0;
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+  opacity: 0.9;
+}
+
+/* CONTENT */
+.content {
+  padding: 1rem 1.25rem 3rem;
+}
+
+.contentInner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.intro {
+  margin: 0 0 1.25rem;
+  max-width: 70ch;
+}
+
+.twoCols {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+}

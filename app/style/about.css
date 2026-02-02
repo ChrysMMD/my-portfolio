@@ -39,11 +39,6 @@
   margin: 0;
 }
 
-.tekst,
-.fakta {
-  margin-top: 7cqw;
-}
-
 .tekst {
   grid-row: 2/4;
   grid-column: 2/3;

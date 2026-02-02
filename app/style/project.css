@@ -1,0 +1,22 @@
+.card-container {
+  --min: 18rem;
+  --gap: 1rem;
+
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+}
+
+.titel-project {
+  margin-bottom: 3rem;
+  container-name: header;
+  container-type: inline size;
+  width: 100%;
+  position: relative;
+}
+
+.titel-project h1 {
+  text-transform: uppercase;
+  position: relative;
+  font-size: clamp(3rem, 15cqw, 24rem);
+}

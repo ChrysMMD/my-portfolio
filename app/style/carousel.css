@@ -1,0 +1,62 @@
+.carousel {
+  width: 100%;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.carouselFrame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9; /* skærm/mockup look */
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* knapper */
+.carouselBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.35);
+  color: white;
+  font-size: 28px;
+  line-height: 44px;
+}
+
+.carouselBtn.prev {
+  left: 12px;
+}
+.carouselBtn.next {
+  right: 12px;
+}
+
+.carouselBtn:hover,
+.carouselBtn:focus-visible {
+  background: rgba(0, 0, 0, 0.55);
+  outline: none;
+}
+
+/* dots */
+.carouselDots {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  border: 0;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.dot.active {
+  background: rgba(255, 255, 255, 0.9);
+}

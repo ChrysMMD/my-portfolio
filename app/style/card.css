@@ -1,0 +1,75 @@
+/* ✅ VIGTIGT: parent til <Image fill /> */
+.projectCard {
+  position: relative; /* <- nødvendig for fill */
+  display: block; /* <- så linket får “box”-layout */
+  width: 100%;
+  aspect-ratio: 5 / 4; /* <- poster-format = ens højde */
+  overflow: hidden;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: inherit;
+
+  transform: translateY(0);
+  transition: transform 250ms ease;
+}
+
+.projectCard:hover,
+.projectCard:focus-visible {
+  transform: translateY(-4px);
+}
+
+/* Next/Image giver den selv absolut via wrapper.
+   Her nøjes vi med animationen */
+.cardImg {
+  transition: transform 260ms ease;
+  transform: scale(1.02);
+}
+
+.projectCard:hover .cardImg,
+.projectCard:focus-visible .cardImg {
+  transform: scale(1.1);
+}
+
+.cardOverlay {
+  position: absolute;
+  inset: 0;
+  padding: 1.2rem;
+
+  display: grid;
+  align-content: end;
+  gap: 0.5rem;
+
+  background: linear-gradient(to top, rgba(0, 0, 0, 10), rgba(0, 0, 0, 0.6));
+
+  opacity: 0;
+  transform: translateY(10px);
+  transition:
+    opacity 220ms ease,
+    transform 220ms ease;
+}
+
+.projectCard:hover .cardOverlay,
+.projectCard:focus-visible .cardOverlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cardTitle {
+  margin: 0;
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--color-orange);
+  font-family: Montserrat;
+}
+
+.cardText {
+  margin: 0;
+  color: var(--color-offwhite);
+  max-width: 40ch;
+}
+
+.cardCta {
+  margin-top: 0.4rem;
+  font-weight: 600;
+  color: var(--color-pink);
+}
