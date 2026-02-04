@@ -39,10 +39,15 @@ export default function Footer() {
       </div>
       <span className="footer__text">
         <p>
-          chrystal-andersen@hotmail.com{" "}
-          <span className="footer__dot">•</span>{" "}
-        </p>{" "}
-        <p>+45 21 27 26 70</p>
+          <a href="mailto:chrystal-andersen@hotmail.com">
+            chrystal-andersen@hotmail.com
+          </a>{" "}
+          <span className="footer__dot">•</span>
+        </p>
+
+        <p>
+          <a href="tel:+4521272670">+45 21 27 26 70</a>
+        </p>
       </span>
     </footer>
   );

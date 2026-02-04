@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import Image from "next/image";
 import "../style/project.css";
-import ProjectCard from "../components/Card.jsx";
+import ProjectCard from "../components/ProjectCard.jsx";
 import { projects } from "../data/projects.js";
 
 export default function Projects() {
@@ -19,10 +19,10 @@ export default function Projects() {
         </div>
         <div className="project-container">
           <section className="card-container">
+            {" "}
             {projects.map((p) => (
               <ProjectCard
                 key={p.slug}
-                slug={p.slug}
                 title={p.title}
                 excerpt={p.excerpt}
                 imageSrc={p.imageSrc}

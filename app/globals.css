@@ -146,6 +146,7 @@ img {
 .theme-projects {
   --bg: var(--color-offwhite);
   --menu-color: var(--color-purple);
+  --menu-hover: var(--color-orange);
   --footer-color: var(--color-purple);
   --text-color: var(--color-orange);
   --h1-color: var(--color-pink);
@@ -167,6 +168,7 @@ img {
   --menu-color: var(--color-purple);
   --footer-color: var(--color-purple);
   --text-color: var(--color-light-pink);
+  --menu-hover: var(--color-orange);
 }
 
 /* CASE */
@@ -174,7 +176,8 @@ img {
   --bg-color: var(--color-purple);
   --menu-color: var(--color-pink);
   --footer-color: var(--color-pink);
-  --text-color: var(--color-light-pink);
+  --text-color: var(--color-offwhite);
+  --h1-color: var(--color-orange);
 }
 
 @media (max-width: 840px) {

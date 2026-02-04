@@ -5,7 +5,7 @@
   pointer-events: auto;
   padding: 1rem 3rem;
   margin-top: 0;
-  border-top: 1px solid var(--footer-color);
+  border-top: 1px solid var(--menu-color);
 }
 
 .footer__left {
@@ -15,7 +15,7 @@
 
 .icon {
   display: inline-flex;
-  color: var(--footer-color);
+  color: var(--menu-color);
   pointer-events: auto;
   transition:
     color 0.2s ease,
@@ -34,8 +34,9 @@
 }
 
 .icon:hover,
-.icon:focus-visible {
-  color: var(--color-light-green);
+.icon:focus-visible,
+.footer__text a:hover {
+  color: var(--menu-hover);
   transform: translateY(-2px);
 }
 
@@ -44,16 +45,18 @@
   flex-direction: row;
 }
 
-.footer__text p {
+.footer__text a {
   font-family: var(--font-body), sans-serif;
   font-weight: 300;
   font-size: 0.95rem;
-  color: var(--footer-color);
+  color: var(--menu-color);
   margin: 0;
+  text-decoration: none;
 }
 
 .footer__dot {
   margin: 0 0.5rem;
+  color: var(--menu-color);
 }
 
 @media (max-width: 840px) {

@@ -125,7 +125,7 @@
     top: 0;
     height: 100%;
     width: min(80vw, 150px);
-    background: var(--bg-color);
+    background: var(--bg);
     border-left: 1px solid var(--menu-color);
     padding: 4rem 1.5rem;
 

@@ -87,7 +87,7 @@ export default function Menu() {
               </Link>
             </li>
             <li>
-              <Link href="/portfolio" onClick={() => setOpen(false)}>
+              <Link href="/projects" onClick={() => setOpen(false)}>
                 Projects
               </Link>
             </li>
