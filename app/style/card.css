@@ -77,10 +77,6 @@
   color: var(--color-pink);
 }
 
-.cardText {
-  display: none;
-}
-
 @container overlay (max-width: 380px) {
   .cardTitle {
     font-size: 1.7rem;
