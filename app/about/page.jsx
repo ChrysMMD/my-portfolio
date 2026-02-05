@@ -25,18 +25,22 @@ export default function About() {
         </div>
         <div className="tekst">
           <p>
-            Jeg er en kreativ frontend-udvikler med passion for design, struktur
-            og brugervenlige løsninger.{" "}
+            Jeg er en nysgerrig og kreativ multimediedesigner med en stor
+            kærlighed til både design, ux og frontend. Jeg trives i krydsfeltet
+            mellem det visuelle og det tekniske, hvor jeg kan omsætte idéer til
+            brugervenlige, æstetiske og gennemarbejdede digitale løsninger.{" "}
           </p>
 
           <p>
-            Jeg trives i mødet mellem det visuelle og det tekniske og elsker at
-            forvandle idéer til intuitive og indbydende brugeroplevelser.{" "}
+            Jeg går op i hvordan mennesker oplever det, jeg skaber. For mig
+            handler godt design ikke kun om at se flot ud, men om at føles
+            rigtigt og give mening for brugeren.{" "}
           </p>
 
           <p>
-            Jeg er nysgerrig, detaljeorienteret og motiveres af at lære nyt. For
-            mig handler frontend ikke kun om kode – men om mennesker.
+            Jeg er motiveret af at lære nyt, eksperimentere og udvikle mig – og
+            jeg elsker at arbejde med projekter, hvor kreativitet og teknologi
+            mødes.
           </p>
         </div>
         <div className="fakta">
