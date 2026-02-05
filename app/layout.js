@@ -1,6 +1,7 @@
 import "./globals.css";
 import Menu from "./components/Menu";
 import Footer from "./components/Footer";
+import PageTransition from "./components/PageTransition";
 import { Montserrat, Roboto_Condensed } from "next/font/google";
 
 const montserrat = Montserrat({
@@ -29,7 +30,9 @@ export default function RootLayout({ children }) {
     >
       <body>
         <Menu />
-        <main className="page">{children}</main>
+        <main className="page">
+          <PageTransition>{children}</PageTransition>
+        </main>
         <Footer />
       </body>
     </html>

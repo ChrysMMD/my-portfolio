@@ -1,12 +1,16 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import Image from "next/image";
 import "../style/lightbox.css";
 
 export default function ImageLightbox({ src, alt = "", onClose }) {
+  const [mounted, setMounted] = useState(false);
+
   useEffect(() => {
-    // lås scroll når lightbox er åben
+    setMounted(true);
+
     const prevOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
 
@@ -21,9 +25,9 @@ export default function ImageLightbox({ src, alt = "", onClose }) {
     };
   }, [onClose]);
 
-  if (!src) return null;
+  if (!mounted || !src) return null;
 
-  return (
+  return createPortal(
     <div className="lb" role="dialog" aria-modal="true" onMouseDown={onClose}>
       <button
         className="lbClose"
@@ -34,17 +38,17 @@ export default function ImageLightbox({ src, alt = "", onClose }) {
         ×
       </button>
 
-      {/* stop klik inde på billedet fra at lukke */}
       <div className="lbInner" onMouseDown={(e) => e.stopPropagation()}>
         <Image
           src={src}
           alt={alt}
           fill
-          sizes="100vw"
           priority
+          sizes="100vw"
           style={{ objectFit: "contain" }}
         />
       </div>
-    </div>
+    </div>,
+    document.body,
   );
 }
