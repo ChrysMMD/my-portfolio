@@ -25,7 +25,7 @@ export default function ProjectCard({ title, excerpt, imageSrc }) {
 
         <div className="cardOverlay">
           <h3 className="cardTitle">{title}</h3>
-          <p className="cardText">{excerpt}</p>
+          <p className="cardText">Project description to be added soon.</p>
           <span className="cardCta">Show full image →</span>
         </div>
       </button>
