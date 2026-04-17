@@ -45,7 +45,7 @@ export default function About() {
         </div>
         <div className="fakta">
           <p>
-            <strong>KALDENAVNE:</strong> CHRIS, CHRYS, CHRYLLE
+            <strong>KALDENAVNE:</strong> ASTRID, CHRYS
             <strong> STYRKER:</strong> OVERBLIK, STRUKTURERET, LÆREVILLIG,
             GÅPÅMOD, ANSVARLIG<strong> SVAGHEDER:</strong> OSTEPOPS{" "}
             <strong>HOBBYER:</strong> TRÆNING, TEGNING, GAMING, STORYTELLING
