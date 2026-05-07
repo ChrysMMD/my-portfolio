@@ -39,9 +39,7 @@ export default function Footer() {
       </div>
       <span className="footer__text">
         <p>
-          <a href="mailto:chrystal-andersen@hotmail.com">
-            chrystal-andersen@hotmail.com
-          </a>{" "}
+          <a href="mailto:hello.astrid@hotmail.com">hello.astrid@hotmail.com</a>{" "}
           <span className="footer__dot">•</span>
         </p>
 
