@@ -19,7 +19,7 @@ export default function Home() {
 
         <h2 className="hero-subtitle">Frontend – Digital design – UX/UI</h2>
 
-        <h3 className="hero-name">CHRYS</h3>
+        <h3 className="hero-name">ASTRID</h3>
       </div>
     </div>
   );
